@@ -43,7 +43,7 @@ class Blockchain(object):
 
     def hash(self,block):
 
-        string_object = json.dummps(block, sort_keys=True)
+        string_object = json.dumps(block, sort_keys=True)
         block_string = string_object.encode()
 
         raw_hash = hashlib.sha256(block_string)
